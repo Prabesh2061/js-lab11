@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js-Lab11</title>
+</head>
+<body>
+  <h1>Click the button below to perform a task</h1>
+  <div>
+    <button onclick="task1()">Task 1</button>
+    <button onclick="task2()">Task 2</button>
+    <button onclick="task3()">Task 3</button>
+    <button onclick="task4()">Task 4</button>
+  </div>
+</body>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  button {
+    border: none;
+    border-radius: 30px;
+    height: 70px;
+    width: 160px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffffff;
+    color: #2575fc;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  button:hover {
+    transform: translateY(-5px);
+    background: #2575fc;
+    color: #ffffff;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  button:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+</style>
+<script src="script.js"></script>
+</html>
